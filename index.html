@@ -1,0 +1,162 @@
+
+<!doctype html>
+<html lang="'en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Structural Dynamics And Vibration</title>
+    <link rel="stylesheet" href="normalize.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function(){
+            $('a').each(function(){
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active'); $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
+    <style type="text/css">
+        nav{
+            display:flex;
+            background-color:#f4f5ed;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+            box-shadow: 10px 10px 0 whitesmoke 50%;
+        }
+        nav ul{
+            display:flex;
+            align-items: center;
+            padding: 0 10%;
+            list-style: none;
+        }
+        nav ul li a{
+            font-size: 16px;
+            padding: 0 15px;
+            color:black;
+            transition: 0.25s;
+            text-transform: uppercase;
+        }
+        nav ul li a:hover{
+            transition: 0.2s;
+            color: grey;   
+        }
+        #nav_bar .active {
+            color:            #f19a9a;
+            background-color: #6386b1;
+        }
+        a{
+            text-decoration: none;
+        }
+        h1{
+            color:white;
+            text-transform: uppercase;
+            font-size: 300%;
+            text-shadow: 1px 1px grey;
+        }
+        .backgroundimg img{
+            width:100%;
+        }
+        .container{
+            width: 100%;
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .centered{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%)
+        }
+    .aboutlab{
+        width:95%;
+        max-width:1200px;
+        height:auto;
+        background-color: white;
+        text-align: center;
+        padding: 40px 50px 70px;
+        margin: 10px auto;
+        box-shadow:10px 10px 0px rgb(0 0 0 /40%), -10px -10px 0px rgb(255 114 114 /80%);
+    }
+    .aboutlab-section{
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: wrap;
+    }
+    .aboutlab-image{
+        height:450px;
+        width:400px;
+        background-image: url("images/aboutlab.jpg");
+    }
+    .aboutlab-text{
+        height:auto;
+        width:40%;
+        margin-left:40px;
+        text-align: left;
+    }
+        
+       
+    </style>
+</head>
+    <body>
+<nav>
+    <ul>
+        <li><a href="#HOME">HOME</a></li>
+        <li><a href="TEAM.html">TEAM</a></li>
+        <li><a href="RESEARCH.html">RESEARCH</a></li>
+        <li><a href="DATABASE.html">DATABASE</a></li>
+        <li><a href="PUBLICATIONS.html">PUBLICATIONS</a></li>
+        <li><a href="GALLERY.html">GALLERY</a></li>
+        <li><a href="More.html">More</a></li>
+    </ul>
+
+</nav>
+
+    <section >
+        <div class="container">
+            <div class="backgroundimg">
+                 <img src="images/background_home.jpg">
+                <div class="centered">
+                    <h1>Structural Dynamics and Vibration Laboratory</h1>
+                </div>
+        
+            </div>
+        </div>
+    
+    </section>
+    <section  id="aboutlab" class="aboutlab">
+        <h2>Structural Dynamics and Vibration</h2>
+        <div class="aboutlab-section">
+            <div class="img">
+                <div class="aboutlab-image"></div>
+
+            </div>
+            <div class="aboutlab-text">
+                <p>Structural dynamics and vibration refer to the study of how structures respond to dynamic loads and oscillatory motion.
+                     It involves the analysis of the behavior of structures under various forces, such as earthquakes, wind loads, machinery
+                      vibrations, and human activities. Understanding structural dynamics is crucial in designing and evaluating the performance 
+                      of buildings, bridges, aircraft, and other engineering structures. Vibration analysis, on the other hand, focuses on the 
+                      study of oscillatory motion and its effects on structures. By examining the natural frequencies, modes of vibration, and damping
+                       characteristics, engineers can identify potential issues, optimize structural designs, and ensure the safety and reliability of
+                        a wide range of systems. Through advanced computational methods and experimental techniques, structural dynamics and vibration 
+                        contribute to the development of robust and resilient structures in the face of dynamic loads.
+                </p>
+                
+            </div>
+
+        </div>
+
+
+
+    </section>
+    
+
+
+
+    </body>
+</html>
