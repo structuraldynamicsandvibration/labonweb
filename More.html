@@ -1,45 +1,110 @@
 
 <!doctype html>
-<html>
+<html lang="'en">
 <head>
-    <title>More Information</title>
-
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MORE</title>
+    <link rel="stylesheet" href="normalize.css">
     <style type="text/css">
-    body {
-        background-color: #f0f0f2;
-        margin: 0;
-        padding: 0;
-        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        
-    }
-    div {
-        width: 600px;
-        margin: 5em auto;
-        padding: 2em;
-        background-color: #fdfdff;
-        border-radius: 0.5em;
-        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
-    }
-    a:link, a:visited {
-        color: #38488f;
-        text-decoration: none;
-    }
-    @media (max-width: 700px) {
-        div {
-            margin: 0 auto;
-            width: auto;
+        nav{
+            display:flex;
+            background-color:white;
+            overflow: hidden;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+            box-shadow: 10px 10px 0 whitesmoke 50%;
         }
-    }
-    </style>    
-</head>
+        nav ul{
+            display:flex;
+            align-items: center;
+            padding: 0 10%;
+            list-style: none;
+        }
+        nav ul li a{
+            font-size: 16px;
+            padding: 0 15px;
+            color:black;
+            transition: 0.25s;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        nav ul li a:hover{
+            transition: 0.2s;
+            color: grey;   
+            background-color: black;
+            padding: 5px;
+        }
+        nav .active{
+            color:            white;
+            background-color:black;
+            padding: 5px;
+        }
+        .container1{
+            width:100%;
+            height:auto;
+            background-color: #273A5A;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            
 
+
+        }
+        .sec1{
+            width:90%;
+            max-width:1200px;
+            height:auto;;
+            text-align: center;
+            padding: 40px 50px 70px;
+            margin: 10px auto;
+        }
+        .sec1-text{
+            color:white;
+            justify-content: center;
+
+        }
+        .footer1{
+            width:100%;
+            height:40px;
+            display: flex;
+            margin:0;
+            justify-content: center;
+            background-color: #34008f;
+            color: #fff;
+            font-size:8pt;
+        }
+   
+    </style>
+</head>
 <body>
-<div>
-    <h1>We will be back soon</h1>
-    <p>Site under maintanence</p>
-</div>
-</body>
+<nav>
+    <ul>
+        <li><a href="index.html" >HOME</a></li>
+        <li><a href="TEAM.html">TEAM</a></li>
+        <li><a href="RESEARCH.html">RESEARCH</a></li>
+        <li><a href="DATABASE.html">DATABASE</a></li>
+        <li><a href="PUBLICATIONS.html">PUBLICATIONS</a></li>
+        <li><a href="GALLERY.html">GALLERY</a></li>
+        <li><a href="More.html" class="active">More</a>
+ 
+    </ul>
+
+</nav>
+    <body>
+        <section>
+            <div class="container1">
+                <div class="sec1">
+                    <p class="sec1-text">Oops! Something went wrong. Come back later.</p>
+            
+                </div>
+            </div>
+        </section>
+
+
+    <footer class="footer1">
+        <p>© 2023 Structural Dynamics and Vibration Lab</p>
+    </footer>
+    </body>
 </html>
