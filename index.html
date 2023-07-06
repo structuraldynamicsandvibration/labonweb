@@ -9,12 +9,13 @@
     <style type="text/css">
         nav{
             display:flex;
-            background-color:#34008f;
+            background-color:white;
+            overflow: hidden;
             justify-content: center;
             position: fixed;
-            width: 110%;
+            width: 100%;
             z-index: 1;
-            box-shadow: 10px 10px 0 whitesmoke 50%;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
         }
         nav ul{
             display:flex;
@@ -25,17 +26,20 @@
         nav ul li a{
             font-size: 16px;
             padding: 0 15px;
-            color:white;
+            color:black;
             transition: 0.25s;
             text-transform: uppercase;
         }
         nav ul li a:hover{
             transition: 0.2s;
             color: grey;   
+            background-color: black;
+            padding: 5px;
         }
-        #nav_bar .active {
-            color:            #f19a9a;
-            background-color: #6386b1;
+        nav .active{
+            color:            white;
+            background-color:black;
+            padding: 5px;
         }
         a{
             text-decoration: none;
@@ -106,10 +110,10 @@
        
     </style>
 </head>
-    <body>
+<body>
 <nav>
     <ul>
-        <li><a href="#HOME">HOME</a></li>
+        <li><a href="#index" class="active">HOME</a></li>
         <li><a href="TEAM.html">TEAM</a></li>
         <li><a href="RESEARCH.html">RESEARCH</a></li>
         <li><a href="DATABASE.html">DATABASE</a></li>
