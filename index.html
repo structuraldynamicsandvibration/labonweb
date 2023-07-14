@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Structural Dynamics And Vibration</title>
     <link rel="stylesheet" href="normalize.css">
+    <script>
+        $(window).on('beforeunload', function() {
+          $('body').hide();
+          $(window).scrollTop(0);
+        });
+    </script>
     <style type="text/css">
         nav{
             display:flex;
